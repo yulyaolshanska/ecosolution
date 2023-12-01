@@ -1,0 +1,16 @@
+.headerContainer {
+    display: flex;
+    padding: 36px 20px;
+    justify-content: space-between;
+}
+
+.burgerBtn {
+    width: 40px;
+    height: 39px;
+    padding: 4px 12px;
+    border-radius: 500px;
+    background: #dcefd8;
+    background-image: url('../../assets/icons/burger.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
