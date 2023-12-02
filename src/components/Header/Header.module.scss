@@ -1,7 +1,11 @@
 .headerContainer {
     display: flex;
-    padding: 36px 20px;
+    margin-bottom: 146px;
     justify-content: space-between;
+}
+
+.transparentHeader {
+    opacity: 0.8;
 }
 
 .burgerBtn {
@@ -10,7 +14,8 @@
     padding: 4px 12px;
     border-radius: 500px;
     background: #dcefd8;
-    background-image: url('../../assets/icons/burger.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+
+    &:hover {
+        background: #97d28b;
+    }
 }
