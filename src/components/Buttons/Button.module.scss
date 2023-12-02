@@ -1,0 +1,42 @@
+.buttonWithText {
+    margin-bottom: 24px;
+    display: flex;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 500px;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+
+    &.learnMoreBtn {
+        margin: 0 auto 24px;
+        border: 1px solid #97d28b;
+        line-height: 18px;
+
+        a {
+            padding: 4px 4px 4px 16px;
+        }
+
+        &:hover {
+            color: #97d28b;
+            background: #173d33;
+            border: 1px solid #173d33;
+        }
+    }
+
+    &.getInTouchBtn {
+        a {
+            padding: 10px 16px;
+        }
+    }
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-right: 12px;
+}
