@@ -1,0 +1,43 @@
+.container {
+    margin-bottom: 36px;
+}
+
+.title {
+    margin-bottom: 24px;
+    color: #173d33;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.verticalLine {
+    display: flex;
+    margin: 0 auto 24px;
+    width: 1px;
+    height: 48px;
+    background-color: #97d28b;
+}
+
+.counterContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    margin-right: 8px;
+    color: #97d28b;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+
+.counterValue {
+    color: #173d33;
+    font-family: Oswald;
+    font-size: 24px;
+}
