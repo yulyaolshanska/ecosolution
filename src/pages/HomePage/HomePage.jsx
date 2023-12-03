@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../../components/About/About';
+import Electricity from '../../components/Electricity/Electricity';
 import Cases from '../../components/Cases/Cases';
 import ContactUs from '../../components/ContactUs/ContactUs';
 import FAQ from '../../components/FAQ/FAQ';
@@ -16,6 +17,7 @@ const HomePage = () => {
             <Hero />
             <MainValues />
             <About />
+            <Electricity />
             <Cases />
             <FAQ />
             <ContactUs />
