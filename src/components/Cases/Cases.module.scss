@@ -1,1 +1,44 @@
- 
+.container {
+    margin-bottom: 36px;
+}
+
+.title {
+    margin-bottom: 24px;
+    color: #173d33;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.slideNavigation {
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.slideCurrentText {
+    color: #173d33;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -1.12px;
+}
+
+.totalSlides {
+    color: rgba(23, 61, 51, 0.25);
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -1.12px;
+}
+
+.slideBtns {
+    display: flex;
+    gap: 12px;
+}
+
+.slideBtn {
+    padding: 15px;
+    border-radius: 100px;
+    border: 1px solid #173d33;
+}
