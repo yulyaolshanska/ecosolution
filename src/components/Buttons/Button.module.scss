@@ -1,5 +1,4 @@
 .buttonWithText {
-    margin-bottom: 24px;
     display: flex;
     height: 39px;
     justify-content: center;
@@ -8,9 +7,10 @@
     border-radius: 500px;
     font-size: 16px;
     letter-spacing: -0.64px;
+    color: #173d33;
 
     &.learnMoreBtn {
-        margin: 0 auto 24px;
+        margin: 0 auto;
         border: 1px solid #97d28b;
         line-height: 18px;
 
@@ -25,9 +25,22 @@
         }
     }
 
-    &.getInTouchBtn {
+    &.contactsBtn {
+        background: #97d28b;
+
         a {
             padding: 10px 16px;
+        }
+        svg {
+            fill: #173d33;
+        }
+
+        &:hover {
+            background: #173d33;
+            color: #97d28b;
+            svg {
+                fill: #97d28b;
+            }
         }
     }
 }
