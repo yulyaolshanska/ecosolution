@@ -7,7 +7,7 @@ import AboutImage2 from '../../assets/images/about/man-worker-firld-by-solar-pan
 
 const About = () => {
     return (
-        <ul className={styles.aboutList}>
+        <ul className={styles.aboutList} id="about">
             {aboutData.slice(0, 2).map(({ id, text, icon, title }) => (
                 <AboutCard text={text} icon={icon} title={title} key={id} />
             ))}
