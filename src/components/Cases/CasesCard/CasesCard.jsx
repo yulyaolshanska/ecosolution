@@ -14,10 +14,12 @@ const CasesCard = ({ image, alt, title, description, date }) => {
                         <img src={ArrowUpRight} alt={alt} />
                     </button>
                 </div>
-                <div className={styles.gorizontalLine}></div>
-                <div className={styles.descriptionContainer}>
-                    <p className={styles.cardDescription}>{description}</p>
-                    <p className={styles.cardDate}>{date}</p>
+                <div>
+                    <div className={styles.gorizontalLine}></div>
+                    <div className={styles.descriptionContainer}>
+                        <p className={styles.cardDescription}>{description}</p>
+                        <p className={styles.cardDate}>{date}</p>
+                    </div>
                 </div>
             </div>
         </div>

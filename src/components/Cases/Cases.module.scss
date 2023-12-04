@@ -1,5 +1,19 @@
 .container {
     margin-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 100px;
+    }
+}
+
+.titleContainer {
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
 }
 
 .title {
@@ -8,6 +22,23 @@
     font-size: 28px;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+        max-width: 264px;
+        margin-bottom: 0;
+    }
+}
+
+.verticalLine {
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 65px;
+        width: 1px;
+        background-color: #97d28b;
+    }
 }
 
 .slideNavigation {
@@ -16,6 +47,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media screen and (min-width: 768px) {
+        width: 49%;
+        margin-left: 8px;
+    }
 }
 
 .slideCurrentText {
@@ -41,4 +77,24 @@
     padding: 15px;
     border-radius: 100px;
     border: 1px solid #173d33;
+    width: 66px;
+    height: 66px;
+
+    svg {
+        stroke: #173d33;
+    }
+
+    &:hover {
+        border: 1px solid #97d28b;
+
+        svg {
+            stroke: #97d28b;
+        }
+    }
+}
+
+.list {
+    @media screen and (min-width: 768px) {
+        margin-right: -24px;
+    }
 }

@@ -77,49 +77,56 @@ const Cases = () => {
 
     return (
         <div className={styles.container} id="cases">
-            <h3 className={styles.title}>Successful cases of our company</h3>
-            <div className={styles.slideNavigation}>
-                <p>
-                    <span className={styles.slideCurrentText}>
-                        {currentSlide}
-                    </span>
-                    <span className={styles.totalSlides}>
-                        /{casesData.length}
-                    </span>
-                </p>
+            <div className={styles.titleContainer}>
+                <h3 className={styles.title}>
+                    Successful cases of our company
+                </h3>
+                <div className={styles.verticalLine}></div>
+                <div className={styles.slideNavigation}>
+                    <p>
+                        <span className={styles.slideCurrentText}>
+                            {currentSlide}
+                        </span>
+                        <span className={styles.totalSlides}>
+                            /{casesData.length}
+                        </span>
+                    </p>
 
-                <div className={styles.slideBtns}>
-                    <button
-                        className={styles.slideBtn}
-                        type="button"
-                        onClick={onPrevSlide}
-                    >
-                        <ArrowLeft />
-                    </button>
-                    <button
-                        className={styles.slideBtn}
-                        type="button"
-                        onClick={onNextSlide}
-                    >
-                        <ArrowRight />
-                    </button>
+                    <div className={styles.slideBtns}>
+                        <button
+                            className={styles.slideBtn}
+                            type="button"
+                            onClick={onPrevSlide}
+                        >
+                            <ArrowLeft />
+                        </button>
+                        <button
+                            className={styles.slideBtn}
+                            type="button"
+                            onClick={onNextSlide}
+                        >
+                            <ArrowRight />
+                        </button>
+                    </div>
                 </div>
             </div>
             <div>
-                <Slider {...slideSettings} ref={sliderRef}>
-                    {casesData.map(
-                        ({ id, image, alt, title, description, date }) => (
-                            <CasesCard
-                                key={id}
-                                image={image}
-                                alt={alt}
-                                title={title}
-                                description={description}
-                                date={date}
-                            />
-                        )
-                    )}
-                </Slider>
+                <ul className={styles.list}>
+                    <Slider {...slideSettings} ref={sliderRef}>
+                        {casesData.map(
+                            ({ id, image, alt, title, description, date }) => (
+                                <CasesCard
+                                    key={id}
+                                    image={image}
+                                    alt={alt}
+                                    title={title}
+                                    description={description}
+                                    date={date}
+                                />
+                            )
+                        )}
+                    </Slider>
+                </ul>
             </div>
         </div>
     );

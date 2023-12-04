@@ -3,6 +3,13 @@
     flex-direction: column;
     background: #eaedf1;
 
+    @media screen and (min-width: 768px) {
+        height: 322px;
+        &:not(:nth-child(even)) {
+            margin-right: 24px;
+        }
+    }
+
     @media screen and (min-width: 1280px) {
         max-width: 596px;
     }
@@ -27,6 +34,12 @@
     letter-spacing: -0.72px;
     font-family: Fira Sans;
     max-width: 194px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: -0.8px;
+    }
 }
 
 .cardBtn {
@@ -37,6 +50,10 @@
 
 .textWrapper {
     padding: 24px 12px 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media screen and (min-width: 1280px) {
         padding: 36px 48px;
@@ -49,10 +66,6 @@
     flex-shrink: 0;
     background-color: #97d28b;
     margin-bottom: 12px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 24px;
-    }
 }
 
 .descriptionContainer {
