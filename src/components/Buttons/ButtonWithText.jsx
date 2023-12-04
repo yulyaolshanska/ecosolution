@@ -19,7 +19,7 @@ const ButtonWithText = ({
             onClick={handleClick}
             disabled={isDisabled}
         >
-            <span> {text}</span>
+            <span>{text}</span>
             {children}
         </button>
     );

@@ -1,4 +1,5 @@
 .buttonWithText {
+    grid-area: button;
     display: flex;
     height: 39px;
     justify-content: center;
@@ -10,7 +11,11 @@
     color: #173d33;
 
     &.lightBtn {
-        margin: 0 auto;
+        @media screen and (max-width: 767px) {
+            margin: 0 auto;
+        }
+
+        max-width: 142px;
         border: 1px solid #97d28b;
         line-height: 18px;
         padding: 4px 4px 4px 16px;
@@ -22,7 +27,8 @@
         }
     }
 
-    &.contactsBtn {
+    &.contactsBtn,
+    &.getInTouch {
         background: #97d28b;
         padding: 10px 16px;
 
@@ -36,6 +42,12 @@
             svg {
                 fill: #97d28b;
             }
+        }
+    }
+
+    &.getInTouch {
+        @media screen and (max-width: 767px) {
+            display: none;
         }
     }
 }
