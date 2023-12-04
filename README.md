@@ -1,6 +1,6 @@
 # EcoSolution - Greenergy for Life
 
-![Eco Solution]()
+![Eco Solution]("./src/assets/icons/logo.svg")
 
 ## _EcoSolution company_
 
