@@ -4,16 +4,17 @@ import { ReactComponent as Phone } from '../../assets/icons/contacts/call.svg';
 import { ReactComponent as Map } from '../../assets/icons/contacts/map.svg';
 import { ReactComponent as Facebook } from '../../assets/icons/contacts/facebook.svg';
 import { ReactComponent as Instagram } from '../../assets/icons/contacts/instagram.svg';
+import ContactForm from './ContactForm/ContactForm';
 import styles from './ContactUs.module.scss';
 
 const ContactUs = () => {
     return (
-        <div id="contacts">
+        <div id="contacts" className={styles.container}>
             <h2 className={styles.title}>Contact Us</h2>
             <ul className={styles.contactList}>
                 <li className={styles.contactItem}>
                     <p className={styles.contactType}>Phone:</p>
-                    <div className={styles.info}>
+                    <div className={styles.phoneContainer}>
                         <div className={styles.contact}>
                             <Phone />
                             <a href="tel:380981234567">38 (098) 12 34 567</a>
@@ -26,16 +27,17 @@ const ContactUs = () => {
                 </li>
                 <li className={styles.contactItem}>
                     <p className={styles.contactType}>E-mail:</p>
-
-                    <Mail />
-                    <a href="mailto:office@ecosolution.com">
-                        office@ecosolution.com
-                    </a>
+                    <div className={styles.contact}>
+                        <Mail />
+                        <a href="mailto:office@ecosolution.com">
+                            office@ecosolution.com
+                        </a>
+                    </div>
                 </li>
                 <li className={styles.contactItem}>
                     <p className={styles.contactType}>Address:</p>
 
-                    <address className={styles.info}>
+                    <address>
                         <div className={styles.contact}>
                             <Map />
                             <p>
@@ -46,11 +48,13 @@ const ContactUs = () => {
                 </li>
                 <li className={styles.contactItem}>
                     <p className={styles.contactType}>Social Networks:</p>
-
-                    <Facebook />
-                    <Instagram />
+                    <div className={`${styles.contact} ${styles.socials}`}>
+                        <Facebook />
+                        <Instagram />
+                    </div>
                 </li>
             </ul>
+            <ContactForm />
         </div>
     );
 };

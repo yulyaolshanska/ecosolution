@@ -1,7 +1,66 @@
+.container {
+    margin-bottom: 36px;
+}
+
 .title {
     margin-bottom: 24px;
     text-align: center;
     color: #173d33;
     font-size: 28px;
     text-transform: uppercase;
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 24px;
+    }
+}
+
+.contactType {
+    margin-bottom: 8px;
+    color: #173d33;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #173d33;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    cursor: pointer;
+
+    svg {
+        flex-shrink: 0;
+        stroke: #173d33;
+        fill: #173d33;
+
+        &:hover {
+            stroke: #97d28b;
+            fill: #97d28b;
+        }
+    }
+
+    svg + p:hover {
+        stroke: #97d28b;
+        fill: #97d28b;
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 32px;
+    padding: 12px;
+}
+
+.phoneContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
