@@ -1,27 +1,47 @@
 .container {
-    max-width: 480px;
     margin-top: 186px;
     margin-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 204px;
+        margin-bottom: 100px;
+    }
+}
+
+.descContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'title'
+        'desc'
+        'button';
+    gap: 24px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'title desc'
+            'title button';
+    }
 }
 
 .title {
-    margin-bottom: 24px;
+    grid-area: title;
     color: #173d33;
-    font-family: Oswald;
     font-size: 36px;
-    font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        max-width: 300px;
+    }
 }
 
 .desc {
-    margin-bottom: 24px;
+    grid-area: desc;
     color: #173d33;
-    font-family: Fira Sans;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.64px;
 }
 
@@ -39,6 +59,12 @@
     align-items: center;
     gap: 8px;
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
 }
 
 .addressText {
@@ -64,11 +90,9 @@
     min-height: 200px;
 
     @media screen and (min-width: 768px) {
-        width: 710px;
-        height: auto;
+        min-height: 348px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1242px;
     }
 }

@@ -12,19 +12,21 @@ const Hero = () => {
 
     return (
         <div className={styles.container} id="main">
-            <h1 className={styles.title}>RENEWABLE ENERGY For any task</h1>
-            <p className={styles.desc}>
-                Development and implementation of renewable non-polluting energy
-                sources, generating power generation using energy wind, sun,
-                water, biomass
-            </p>
-            <ButtonWithText
-                text="Learn more"
-                variant="lightBtn"
-                handleClick={e => handleNavLinkClick(e, '#cases')}
-            >
-                <ArrowRight />
-            </ButtonWithText>
+            <div className={styles.descContainer}>
+                <h1 className={styles.title}>RENEWABLE ENERGY For any task</h1>
+                <p className={styles.desc}>
+                    Development and implementation of renewable non-polluting
+                    energy sources, generating power generation using energy
+                    wind, sun, water, biomass
+                </p>
+                <ButtonWithText
+                    text="Learn more"
+                    variant="lightBtn"
+                    handleClick={e => handleNavLinkClick(e, '#cases')}
+                >
+                    <ArrowRight />
+                </ButtonWithText>
+            </div>
             <div className={styles.line}></div>
             <div className={styles.address}>
                 <p className={styles.addressText}>
@@ -44,7 +46,7 @@ const Hero = () => {
     ${heroImageDesktop} 1280w
   `}
                 sizes="(max-width: 767px) 480px,
-         (min-width: 768px) and (max-width: 1279px) 767px,
+         (min-width: 768px) and (max-width: 1279px) 708px,
          (min-width: 1280px) 1280px"
                 src={heroImage}
             />
