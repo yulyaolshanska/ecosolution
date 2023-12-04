@@ -1,13 +1,20 @@
-.logoContainer {
+.logoLink {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 40px;
+
+    &:hover {
+        .title {
+            color: #97d28b;
+        }
+    }
 }
 
 .title {
-    margin-right: 4px;
+    margin: 0 4px;
     color: #173d33;
-    font-family: FONTSPRING DEMO - All Round Gothic Thick;
+    font-family: Oswald;
     font-size: 33px;
     font-style: normal;
     font-weight: 500;
@@ -17,7 +24,7 @@
 
 .subTitle {
     color: #173d33;
-    font-family: CA Saygon Text;
+    font-family: Fira Sans;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -29,10 +36,10 @@
 
 .accent {
     color: #97d28b;
-    font-family: CA Saygon Text;
+    font-family: Fira Sans;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
-    line-height: 9px; /* 90% */
+    line-height: 9px;
     letter-spacing: -0.4px;
 }

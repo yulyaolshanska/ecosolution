@@ -5,30 +5,39 @@ import Logo from '../Logo/Logo';
 import styles from './Header.module.scss';
 
 const Header = () => {
-    const [transparent, setTransparent] = useState(true);
-    const [isMobile, setIsMobile] = useState(false);
     const [isMenuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            const isTop = window.scrollY < (isMobile ? 120 : 70);
-            setTransparent(isTop);
+            const scrollY = window.scrollY;
+            setIsScrolled(scrollY > 0 ? 'true' : 'false');
         };
 
-        setIsMobile(window.innerWidth <= 768);
-
         window.addEventListener('scroll', handleScroll);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [isMobile]);
+    }, []);
+
+    //  const handleGetInTouchClick = () => {
+    //      const contactUsSection = document.getElementById('contactUsSection');
+    //      if (contactUsSection) {
+    //          contactUsSection.scrollIntoView({ behavior: 'smooth' });
+    //      }
+    //  };
 
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
     };
 
     return (
-        <header className={transparent ? styles.transparentHeader : ''}>
+        <header
+            className={`${styles.header} ${
+                isScrolled ? styles.scrolledHeader : ''
+            }`}
+        >
             <div className={styles.headerContainer}>
                 <Logo />
                 <button className={styles.burgerBtn} onClick={toggleMenu}>
