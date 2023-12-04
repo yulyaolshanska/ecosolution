@@ -70,6 +70,12 @@ h6 {
     font-family: 'Oswald';
 }
 
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
 p {
     font-size: inherit;
     font-weight: inherit;
