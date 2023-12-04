@@ -2,7 +2,7 @@
 
 ![Eco Solution]()
 
-## _Finance Ledger company_
+## _EcoSolution company_
 
 [Click to view website](https://eco-solution.netlify.app/)
 
