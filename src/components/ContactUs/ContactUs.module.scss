@@ -2,12 +2,25 @@
     margin-bottom: 36px;
 }
 
+.contactContainer {
+    @media (min-width: 768px) {
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .title {
     margin-bottom: 24px;
     text-align: center;
     color: #173d33;
     font-size: 28px;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+        font-size: 36px;
+    }
 }
 
 .contactList {

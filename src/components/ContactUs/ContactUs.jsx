@@ -11,50 +11,57 @@ const ContactUs = () => {
     return (
         <div id="contacts" className={styles.container}>
             <h2 className={styles.title}>Contact Us</h2>
-            <ul className={styles.contactList}>
-                <li className={styles.contactItem}>
-                    <p className={styles.contactType}>Phone:</p>
-                    <div className={styles.phoneContainer}>
-                        <div className={styles.contact}>
-                            <Phone />
-                            <a href="tel:380981234567">38 (098) 12 34 567</a>
+            <div className={styles.contactContainer}>
+                <ul className={styles.contactList}>
+                    <li className={styles.contactItem}>
+                        <p className={styles.contactType}>Phone:</p>
+                        <div className={styles.phoneContainer}>
+                            <div className={styles.contact}>
+                                <Phone />
+                                <a href="tel:380981234567">
+                                    38 (098) 12 34 567
+                                </a>
+                            </div>
+                            <div className={styles.contact}>
+                                <Phone />
+                                <a href="tel:380931234567">
+                                    38 (093) 12 34 567
+                                </a>
+                            </div>
                         </div>
+                    </li>
+                    <li className={styles.contactItem}>
+                        <p className={styles.contactType}>E-mail:</p>
                         <div className={styles.contact}>
-                            <Phone />
-                            <a href="tel:380931234567">38 (093) 12 34 567</a>
+                            <Mail />
+                            <a href="mailto:office@ecosolution.com">
+                                office@ecosolution.com
+                            </a>
                         </div>
-                    </div>
-                </li>
-                <li className={styles.contactItem}>
-                    <p className={styles.contactType}>E-mail:</p>
-                    <div className={styles.contact}>
-                        <Mail />
-                        <a href="mailto:office@ecosolution.com">
-                            office@ecosolution.com
-                        </a>
-                    </div>
-                </li>
-                <li className={styles.contactItem}>
-                    <p className={styles.contactType}>Address:</p>
+                    </li>
+                    <li className={styles.contactItem}>
+                        <p className={styles.contactType}>Address:</p>
 
-                    <address>
-                        <div className={styles.contact}>
-                            <Map />
-                            <p>
-                                79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-                            </p>
+                        <address>
+                            <div className={styles.contact}>
+                                <Map />
+                                <p>
+                                    79005, Ukraine, Lvivstreet. Shota Rustaveli,
+                                    7
+                                </p>
+                            </div>
+                        </address>
+                    </li>
+                    <li className={styles.contactItem}>
+                        <p className={styles.contactType}>Social Networks:</p>
+                        <div className={`${styles.contact} ${styles.socials}`}>
+                            <Facebook />
+                            <Instagram />
                         </div>
-                    </address>
-                </li>
-                <li className={styles.contactItem}>
-                    <p className={styles.contactType}>Social Networks:</p>
-                    <div className={`${styles.contact} ${styles.socials}`}>
-                        <Facebook />
-                        <Instagram />
-                    </div>
-                </li>
-            </ul>
-            <ContactForm />
+                    </li>
+                </ul>
+                <ContactForm />
+            </div>
         </div>
     );
 };
