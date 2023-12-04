@@ -1,14 +1,25 @@
 .container {
     margin-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 100px;
+    }
 }
 
 .title {
+    margin: 0 auto;
     margin-bottom: 24px;
     color: #173d33;
     text-align: center;
     font-size: 28px;
     font-weight: 400;
     text-transform: uppercase;
+    max-width: 290px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+        max-width: 370px;
+    }
 }
 
 .verticalLine {
@@ -34,10 +45,20 @@
     font-weight: 700;
     text-transform: uppercase;
     font-family: Oswald;
+
+    @media screen and (min-width: 768px) {
+        font-size: 100px;
+        margin-right: 24px;
+    }
 }
 
 .counterValue {
     color: #173d33;
     font-family: Oswald;
     font-size: 24px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+        line-height: 1.7;
+    }
 }
