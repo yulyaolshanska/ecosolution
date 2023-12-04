@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    padding: 24px 0;
+    width: 100%;
+    border-top: 1px solid #97d28b;
+}
+
+.navConainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 19px;
+    row-gap: 24px;
+    grid-template-areas:
+        'logo linkUp'
+        'socials socials';
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.linkUp {
+    display: block;
+    margin-left: auto;
+    grid-area: linkUp;
+    width: 32px;
+    height: 32px;
+
+    svg {
+        width: 32px;
+        height: 32px;
+        stroke: #173d33;
+        padding: 8px;
+        border-radius: 100px;
+        background-color: #97d28b;
+        transform: rotate(-45deg);
+    }
+}
+
+.linkUp:hover svg {
+    background-color: #173d33;
+    stroke: #97d28b;
+}
+
+.socials {
+    display: flex;
+    gap: 8px;
+    justify-self: center;
+    grid-area: socials;
+
+    svg {
+        stroke: #173d33;
+    }
+}
+
+.socialItem:hover svg {
+    stroke: #97d28b;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: #173d33;
+
+    p {
+        letter-spacing: -0.64px;
+    }
+}
