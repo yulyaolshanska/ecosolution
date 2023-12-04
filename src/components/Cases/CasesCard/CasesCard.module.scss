@@ -13,6 +13,10 @@
     @media screen and (min-width: 1280px) {
         height: 506px;
         max-width: 596px;
+
+        &:not(:nth-child(even)) {
+            margin-right: 48px;
+        }
     }
 }
 
