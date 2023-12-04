@@ -9,14 +9,11 @@
     letter-spacing: -0.64px;
     color: #173d33;
 
-    &.learnMoreBtn {
+    &.lightBtn {
         margin: 0 auto;
         border: 1px solid #97d28b;
         line-height: 18px;
-
-        a {
-            padding: 4px 4px 4px 16px;
-        }
+        padding: 4px 4px 4px 16px;
 
         &:hover {
             color: #97d28b;
@@ -27,10 +24,8 @@
 
     &.contactsBtn {
         background: #97d28b;
+        padding: 10px 16px;
 
-        a {
-            padding: 10px 16px;
-        }
         svg {
             fill: #173d33;
         }
@@ -43,13 +38,4 @@
             }
         }
     }
-}
-
-.link {
-    display: flex;
-    align-items: center;
-}
-
-.text {
-    margin-right: 12px;
 }
