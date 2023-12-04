@@ -4,15 +4,13 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 480px;
     margin-bottom: 36px;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        max-width: 768px;
-        margin-bottom: 75px;
+        margin-bottom: 100px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -35,6 +33,7 @@
         align-items: flex-start;
         max-width: 768px;
         margin: 0;
+        font-size: 36px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 48px;
@@ -50,10 +49,9 @@
 .verticalLine {
     margin-right: 11px;
     display: none;
-    height: 110px;
+    height: 150px;
     width: 1px;
-    transform: translateX(-50%);
-    border: 1px solid #97d28b;
+    background-color: #97d28b;
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -62,15 +60,13 @@
 
 .desc {
     color: #173d33;
-    font-family: Fira Sans;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.64px;
 
     @media screen and (min-width: 768px) {
-        max-width: 340px;
+        max-width: 350px;
     }
     @media screen and (min-width: 1280px) {
         max-width: 460px;
