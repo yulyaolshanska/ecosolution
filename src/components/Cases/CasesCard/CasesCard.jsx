@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import ArrowUpRight from '../../../assets/icons/arrow-up-right-big.svg';
 import styles from './CasesCard.module.scss';

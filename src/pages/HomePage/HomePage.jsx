@@ -12,17 +12,19 @@ import styles from './HomePage.module.scss';
 
 const HomePage = () => {
     return (
-        <div className={styles.pageContainer}>
+        <>
             <Header />
-            <Hero />
-            <MainValues />
-            <About />
-            <Electricity />
-            <Cases />
-            <FAQ />
-            <ContactUs />
-            <Footer />
-        </div>
+            <div className={styles.pageContainer}>
+                <Hero />
+                <MainValues />
+                <About />
+                <Electricity />
+                <Cases />
+                <FAQ />
+                <ContactUs />
+                <Footer />
+            </div>
+        </>
     );
 };
 

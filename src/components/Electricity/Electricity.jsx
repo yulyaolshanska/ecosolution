@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './Electricity.module.scss';
 
 const Electricity = () => {

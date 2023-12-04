@@ -1,11 +1,15 @@
+import React from 'react';
 import ButtonWithText from '../Buttons/ButtonWithText';
 import { ReactComponent as ArrowRight } from '../../assets/icons/arrow-right-green.svg';
 import heroImage from '../../assets/images/hero/hero.jpg';
 import heroImageTablet from '../../assets/images/hero/hero-780w.jpg';
 import heroImageDesktop from '../../assets/images/hero/hero-1280w.jpg';
+import useHandleNavLinkClick from '../../utils/handleNavLinkClick';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
+    const handleNavLinkClick = useHandleNavLinkClick();
+
     return (
         <div className={styles.container} id="main">
             <h1 className={styles.title}>RENEWABLE ENERGY For any task</h1>
@@ -16,8 +20,8 @@ const Hero = () => {
             </p>
             <ButtonWithText
                 text="Learn more"
-                variant="learnMoreBtn"
-                hash="/#cases"
+                variant="lightBtn"
+                handleClick={e => handleNavLinkClick(e, '#cases')}
             >
                 <ArrowRight />
             </ButtonWithText>
