@@ -4,10 +4,12 @@ import { ReactComponent as Minus } from '../../assets/icons/minus.svg';
 import { ReactComponent as Plus } from '../../assets/icons/add.svg';
 import { ReactComponent as ArrowBottom } from '../../assets/icons/arrow-bottom.svg';
 import ButtonWithText from '../Buttons/ButtonWithText';
+import useHandleNavLinkClick from '../../utils/handleNavLinkClick';
 import styles from './FAQ.module.scss';
 
 const FAQ = () => {
     const [openedQuestion, setOpenedQuestion] = useState(faqData[0].id);
+    const handleNavLinkClick = useHandleNavLinkClick();
 
     const handleClick = id => {
         setOpenedQuestion(id === openedQuestion ? null : id);
@@ -49,7 +51,7 @@ const FAQ = () => {
                 <ButtonWithText
                     text="Contact Us"
                     variant="contactsBtn"
-                    hash="#contacts"
+                    handleClick={e => handleNavLinkClick(e, '#contacts')}
                 >
                     <ArrowBottom />
                 </ButtonWithText>
