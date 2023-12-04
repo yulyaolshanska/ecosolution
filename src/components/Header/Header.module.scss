@@ -19,6 +19,10 @@
         max-width: 708px;
         padding: 36px 0px;
     }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1240px;
+    }
 }
 
 .buttonsContainer {
