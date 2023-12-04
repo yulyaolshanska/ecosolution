@@ -3,17 +3,24 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as ArrowRight } from '../../assets/icons/arrow-right.svg';
 import { ReactComponent as Facebook } from '../../assets/icons/contacts/facebook.svg';
 import { ReactComponent as Instagram } from '../../assets/icons/contacts/instagram.svg';
+import useHandleNavLinkClick from '../../utils/handleNavLinkClick';
 import Logo from '../Logo/Logo';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+    const handleNavLinkClick = useHandleNavLinkClick();
+
     return (
         <footer className={styles.container} id="footer">
             <div className={styles.navConainer}>
                 <div className={styles.logo}>
                     <Logo />
                 </div>
-                <Link to="#main" className={styles.linkUp}>
+                <Link
+                    to="#main"
+                    className={styles.linkUp}
+                    onClick={e => handleNavLinkClick(e, '#main')}
+                >
                     <ArrowRight />
                 </Link>
                 <div className={styles.socials}>
