@@ -4,7 +4,7 @@
 
 ## _EcoSolution company_
 
-[Click to view website](https://eco-solution.netlify.app/)
+## [Click to view website](https://eco-solution.netlify.app/)
 
 Welcome to EcoSolution's repository! Here, we are on a mission to revolutionize
 the energy landscape, providing sustainable solutions for a cleaner and brighter
@@ -23,7 +23,7 @@ understand the unique approach we bring to the renewable energy sector.
 properly:
 
 -   [ReactJS] - HTML enhanced for web apps!
--   [Styled component] - Use the best bits of ES6 and CSS to style your apps.
+-   [module scss] 
 -   [react-slick]
 
 And of course Dillinger itself is open source with a
